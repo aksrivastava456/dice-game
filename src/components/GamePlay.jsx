@@ -4,7 +4,7 @@ import NumberSelector from "./NumberSelector";
 import RollDice from "./RollDice";
 
 const GamePlay = () => {
-    const [totalScore, setTotalScore] = useState(0);
+  const [totalScore, setTotalScore] = useState(0);
 
   const [activeButton, setActiveButton] = useState("");
 
@@ -19,11 +19,11 @@ const GamePlay = () => {
 
   const handleDiceClick = (value) => {
     if (activeButton != "") {
-        setActiveDice(value);
-        const newScore = (value === activeButton) ? totalScore + 10 : totalScore - 2;
-        setTotalScore(newScore);
-    }
-    else setError("You have not selected any number.");
+      setActiveDice(value);
+      const newScore =
+        value === activeButton ? totalScore + 10 : totalScore - 2;
+      setTotalScore(newScore);
+    } else setError("You have not selected any number.");
   };
 
   const randomNumberGenerator = (min, max) =>
@@ -35,12 +35,18 @@ const GamePlay = () => {
           <h1>{totalScore}</h1>
           <p>Total Score</p>
         </div>
-        <NumberSelector error={error} setError={setError} activeButton={activeButton} handleClick={handleClick} />
+        <NumberSelector
+          error={error}
+          setError={setError}
+          activeButton={activeButton}
+          handleClick={handleClick}
+        />
       </div>
       <RollDice
         activeDice={activeDice}
         handleDiceClick={handleDiceClick}
-        randomNumberGenerator={randomNumberGenerator} setTotalScore={setTotalScore}
+        randomNumberGenerator={randomNumberGenerator}
+        setTotalScore={setTotalScore}
       />
     </>
   );

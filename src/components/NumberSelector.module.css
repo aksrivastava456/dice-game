@@ -1,37 +1,37 @@
 .numbers {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .numbers button {
-    font-size: 20px;
-    height: 60px;
-    width: 60px;
-    background-color: white;
-    border: 1px solid black;
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .active {
-    background-color: black !important;
-    color: white;
+  background-color: black !important;
+  color: white;
 }
 
 .numberSelector {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
 }
 
 .numberSelector p {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .error {
-    color: red;
-    font-size: 15px !important;
-    margin-bottom: -20px;
+  color: red;
+  font-size: 15px !important;
+  margin-bottom: -20px;
 }
