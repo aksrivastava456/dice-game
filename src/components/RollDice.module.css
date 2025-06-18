@@ -1,0 +1,44 @@
+.container {
+    max-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 10px;
+}
+
+.dice img {
+    cursor: pointer;
+}
+
+.dice p {
+    font-size: 24px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttonContainer button {
+    font-size: 16px;
+    padding: 10px 58px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.showRulesButton {
+    background-color: black !important;
+    color: white;
+}

@@ -1,0 +1,39 @@
+.container {
+    max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.contentContainer h1 {
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.contentContainer button {
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+    max-width: 180px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+}
+
+.contentContainer button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: 500;
+}

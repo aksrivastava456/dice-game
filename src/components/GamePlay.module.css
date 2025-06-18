@@ -1,0 +1,23 @@
+.topContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.scoreContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 135px;
+}
+
+.scoreContainer h1 {
+    font-size: 80px;
+}
+
+.scoreContainer p {
+    font-size: 24px;
+    font-weight: 600;
+}
